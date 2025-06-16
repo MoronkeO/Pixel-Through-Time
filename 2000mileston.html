@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Through Time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Project/stylesheet.css">
+
+  
+</head>
+
+<body>
+  <div class="top-bar">
+        <div class="back-arrow"><a href="../PAGES/Timeline.html">&#8592;</a></div>
+        <div class="top-icon"><img src="../Assets/IMG/PIXEL THROUGH TIME LOGO-03.png" width="150px"></div>
+      </div>
+
+  <div class="era-title">ERA:ONLINE PLAY,MORE CONSOLES</div>
+
+  <div class="timeline-nav">
+    
+    <div class="timeline-years">
+      <div class="year active" data-year="2000">2000</div>
+      <div class="year" data-year="2001">2001</div>
+      <div class="year" data-year="2003">2003</div>
+      <div class="year" data-year="2004">2004</div>
+      <div class="year" data-year="2005">2005</div>
+      
+    </div>
+    
+  </div>
+
+   <div class="game-panel" id="gamePanel">
+    <div class="game-year" id="gameYear">2000</div>
+    <div class="game-title" id="gameTitle">SIMS</div>
+    <div class="game-desc" id="gameDesc">
+      Will Wright's The Sims was released in 2000, allowing players to create and control virtual people in a simulated world. The game became a cultural phenomenon and spawned numerous expansions and sequels, making it one of the best-selling PC games of all time. 
+    </div>
+    <div class="loading-box">
+    <img id="gameImage" src="../Project/IMAGES/SIMS.jpg"  Width="400px"alt="Game Image" />
+    <div class="press-start">PRESS START TO CONTINUE</div>
+  </div>
+  </div>
+
+  <script>
+    const data = {
+      "2000": {
+        title: "SIMS",
+        desc: "Will Wright's The Sims was released in 2000, allowing players to create and control virtual people in a simulated world. The game became a cultural phenomenon and spawned numerous expansions and sequels, making it one of the best-selling PC games of all time. ",
+        img: "../Project/IMAGES/SIMS.jpg"
+      
+      },
+      "2001": {
+        title: "XBOX",
+        desc: "Microsoft entered the console market with the release of the original Xbox in 2001. The Xbox featured a built-in hard drive and online gaming capabilities, setting it apart from competitors. It also introduced franchises like Halo, which became iconic in the gaming world.",
+        img: "../Project/IMAGES/Xbox.jpeg" 
+        
+      },
+      "2003": {
+        title: "STEAM",
+        desc: "Valve launched Steam in 2003, a digital distribution platform that revolutionized how PC games were purchased and played. Steam allowed for easy updates, multiplayer gaming, and a vast library of games, becoming the dominant platform for PC gaming.",
+        img: "../Project/IMAGES/steam.jpg"
+        
+      },
+      "2004": {
+        title: "NINTENDO DS",
+        desc: "Nintendo released the DS in 2004, a handheld console with dual screens and touch controls. The DS introduced innovative gameplay mechanics and became one of the best-selling handheld consoles, with popular titles like Nintendogs and Brain Age.",
+        img: "../Project/IMAGES/Nintendo-DS.jpg"
+      },
+      "2005": {
+        title: "XBOX 360",
+        desc: "Microsoft launched the Xbox 360 in 2005, featuring high-definition graphics and a robust online service called Xbox Live. The Xbox 360 became known for its extensive library of games and strong multiplayer capabilities, solidifying Microsoft's position in the console market.",
+        img: "../Project/IMAGES/XBOX360.jpg"
+      },
+    };
+
+   const years = document.querySelectorAll('.year');
+const yearEl = document.getElementById('gameYear');
+const titleEl = document.getElementById('gameTitle');
+const descEl = document.getElementById('gameDesc');
+const gameImage = document.getElementById('gameImage'); // Get image element
+
+years.forEach(y => {
+  y.addEventListener('click', () => {
+    // Remove active from all and add to clicked
+    years.forEach(y2 => y2.classList.remove('active'));
+    y.classList.add('active');
+
+    // Blink effect
+    y.classList.add('blink');
+    setTimeout(() => y.classList.remove('blink'), 300);
+
+    // Get year
+    const year = y.dataset.year;
+
+    // Update game info
+    yearEl.textContent = year;
+    titleEl.textContent = data[year].title;
+    descEl.textContent = data[year].desc;
+    gameImage.src = data[year].img; // Update image src
+    gameImage.alt = data[year].title;
+  });
+});
+  </script>
+</body>
+</html>
+  
+
+</body>
+</html>

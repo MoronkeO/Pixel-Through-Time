@@ -1,0 +1,449 @@
+
+    body {
+      margin: 0;
+      background: #ffffff url("https://www.transparenttextures.com/patterns/hexellence.png");
+      color: #05004e;
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+    }
+
+ 
+
+#startBtn {
+  padding: 12px 24px;
+  background: black;
+  color: lime;
+  border: 2px solid lime;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#startBtn:hover {
+  background: lime;
+  color: black;
+}
+
+
+   .h1{
+
+    margin-top: 300px;
+    color: #ff8000;
+    
+}
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+    
+      .intro-text {
+        max-width: 1200px;
+        text-align: left;
+        font-weight: 800;
+            text-align: center;
+            font-size: 40px;
+            color:#05004e
+      }
+    
+      .intro-image {
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+      }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 80px;
+      margin: 40px 0;
+    }
+
+    .feature-box {
+        margin-top: 50px;
+      width: 500px;
+      height: 300px;
+      background: #ffffff;
+      border: 3px solid #ff00ff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff00ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 20px;
+        
+    }
+
+    .feature-box:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ff00ff;
+    }
+
+    .feature-box i {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .cta-button {
+        background-color: #ff00ff;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        margin: 40px 0;
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: 'Press Start 2P', cursive;
+      }
+
+    footer {
+      padding: 30px;
+      font-size: 10px;
+      color: #888;
+    }
+
+    /**TimelinePage**/
+ 
+a{
+  text-decoration: none;
+  color: #ff00ff
+}
+  .top-bar {
+    
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .back-arrow {
+    font-size: 45px;
+    font-weight: 700px;
+    margin-left: 40px;
+    cursor: pointer;
+    color: #ff00ff;
+  }
+
+  .top-icon {
+    position: fixed;       
+  top: 20px;           
+  right: 15px;            
+  width: 150px;           
+  z-index: 1000;
+    
+  }
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    position: relative;
+    
+  }
+  .timeline-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00ff;
+  }
+
+
+  .timeline-row {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100PX;
+    
+  }
+
+  .timeline-icon {
+    width: 450px;
+    height: 300px;
+    gap: 100px;
+    border: 3px solid #ff0db5;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff0db5;
+    background-color: #20068c;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+        text-align: center;
+        font-size: 80px;
+        color:#e009bc
+        transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+
+   /**MilestonePage**/
+   
+
+
+
+
+.timeline-years {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  background-color: #20068c; /* dark purple or your background theme */
+  color: #fff; /* text color */
+  padding: 15px 50px;
+  border: 2px solid #ff00ff; /* neon border */
+  border-radius: 8px;
+   gap: 150px
+
+}
+/* Era Label */
+.era-label {
+  background: #00ff00;
+  color: black;
+  padding: 5px 15px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Glowing Year */
+.years {
+  font-size: 60px;
+  color: #00f0ff;
+  text-shadow: 0 0 15px magenta, 0 0 25px magenta;
+  margin: 0;
+}
+
+
+/* Game Title */
+.title {
+  font-size: 30px;
+  color: #00f0ff;
+  margin: 10px 0 20px;
+  justify-items: left;
+}
+.game-screen {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid cyan;
+  background: #20068c;
+  box-shadow: 0 0 20px cyan;
+  position: relative;
+}
+/* Game Description */
+.description {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+
+/* Loading Box */
+.loading-box {
+  background-color: black;
+  border: 2px solid #ff00ff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+/* Loading Text */
+.loading-title {
+  color: #00ff00;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Game Preview Box */
+.game-preview {
+  border: 2px solid #ff00ff;
+  height: 120px;
+  margin: 15px 0;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pixel dots */
+.game-preview .pixels {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.game-preview .pixels::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(cyan 1.5px, transparent 1.5px),
+    radial-gradient(cyan 1.5px, transparent 1.5px);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  opacity: 0.8;
+}
+
+/* Game name inside preview */
+.pong-title {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #ff00ff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Start Text */
+
+    .timeline-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      gap: 15px;
+    }
+
+    .nav-button {
+      background: #00ffff;
+      color: #000;
+      padding: 10px 20px;
+      font-family: inherit;
+      border: none;
+      cursor: pointer;
+    }
+
+    .timeline-years {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      padding: 28px 10px;
+       margin-top: 20px;
+  border: 2px solid #ff00ff; 
+  border-radius: 8px;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 0 10px #ff00ff;
+  transition: transform 0.2s ease;
+  gap: 195px
+ 
+      
+    }
+
+    .year {
+      position: relative;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 10px;
+    }
+
+    .year.active::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
+      background: cyan;
+      border-radius: 50%;
+      box-shadow: 0 0 10px cyan;
+    }
+
+    .era-title {
+      text-align: center;
+      color: #ff8000;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .game-panel {
+      padding: 40px;
+      text-align: center;
+       border: 2px solid #ff00ff; 
+  border-radius: 8px;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 0 10px #ff00ff;
+      background: #20068c;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    .game-year {
+      font-size: 35px;
+      color: cyan;
+      text-shadow: 0 0 10px cyan;
+      text-align: left;
+    }
+
+    .game-title {
+      font-size: 25px;
+      color: #ff00ff;
+      margin-bottom: 20px;
+      margin-top: 15px;
+      text-align: left;
+     ;
+    }
+
+    .game-desc {
+      color: #ccc;
+      margin: 20px 0;
+       font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+ 
+
+    }
+
+    .loading-box {
+      border: 2px solid cyan;
+      padding: 30px;
+      display: inline-block;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .loading-box::before {
+      content: '> LOADING GAME DATA...';
+      position: absolute;
+      top: -25px;
+      left: 0;
+      color: #0ff;
+      font-size: 12px;
+    }
+
+    .press-start {
+      font-size: 12px;
+      color: #0ff;
+      margin-top: 10px;
+    }
+
+    .blink {
+      animation: blink 1s;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
